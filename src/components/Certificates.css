@@ -1,0 +1,111 @@
+.certificates {
+  background: var(--bg-secondary);
+}
+
+.certificates-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 60px;
+}
+
+.certificate-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 28px 32px;
+  transition: transform var(--transition-base), border-color var(--transition-base),
+              box-shadow var(--transition-base), background-color 0.6s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.certificate-card:hover {
+  transform: translateX(8px);
+  border-color: var(--text-tertiary);
+  box-shadow: var(--shadow-lg);
+}
+
+.certificate-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background: var(--accent-dim);
+  color: var(--text-primary);
+  transition: background 0.6s ease, color 0.6s ease;
+}
+
+.certificate-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.certificate-info {
+  flex: 1;
+}
+
+.certificate-info h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+}
+
+.certificate-issuer {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.certificate-date {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.certificate-link-icon {
+  color: var(--text-tertiary);
+  transition: color var(--transition-base), transform var(--transition-base);
+}
+
+.certificate-link-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.certificate-card:hover .certificate-link-icon {
+  color: var(--text-primary);
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 768px) {
+  .certificate-card {
+    padding: 20px 24px;
+    gap: 16px;
+  }
+
+  .certificate-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+
+  .certificate-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .certificate-info h3 {
+    font-size: 0.95rem;
+  }
+}

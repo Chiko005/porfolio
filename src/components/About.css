@@ -1,0 +1,348 @@
+.about {
+  background: var(--bg-secondary);
+}
+
+.about-content {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.about-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.about-card:hover {
+  border-color: var(--text-tertiary);
+  box-shadow: var(--shadow-glow);
+}
+
+.about-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.about-card-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  background: var(--accent-dim);
+  color: var(--text-primary);
+}
+
+.about-card-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.about-card-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* LeetCode Stats */
+.lc-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.lc-stat {
+  text-align: center;
+  padding: 16px;
+  background: var(--accent-dim);
+  border-radius: var(--radius-md);
+}
+
+.lc-stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.lc-stat-label {
+  font-size: 0.7rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 4px;
+}
+
+.lc-difficulty {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lc-difficulty-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lc-difficulty-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.lc-difficulty-bar-wrapper {
+  flex: 1;
+  margin: 0 16px;
+  height: 3px;
+  background: var(--border-color);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.lc-difficulty-bar {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  width: 0;
+}
+
+.revealed .lc-difficulty-bar {
+  width: var(--fill-width);
+}
+
+.lc-difficulty-bar.easy {
+  background: #6b7280;
+}
+
+.lc-difficulty-bar.medium {
+  background: #9ca3af;
+}
+
+.lc-difficulty-bar.hard {
+  background: var(--text-primary);
+}
+
+.lc-difficulty-count {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  font-weight: 500;
+  min-width: 40px;
+  text-align: right;
+}
+
+/* Contest Rating */
+.contest-rating-display {
+  text-align: center;
+  padding: 24px;
+  background: var(--accent-dim);
+  border-radius: var(--radius-md);
+  margin-bottom: 24px;
+}
+
+.contest-rating-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.contest-rating-label {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 4px;
+}
+
+.contest-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.contest-stat {
+  text-align: center;
+  padding: 12px 8px;
+  background: var(--accent-dim);
+  border-radius: var(--radius-sm);
+}
+
+.contest-stat-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.contest-stat-label {
+  font-size: 0.65rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 2px;
+}
+
+/* ===== EDUCATION SECTION ===== */
+.education-section {
+  margin-top: 60px;
+}
+
+.education-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.education-header h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.education-timeline {
+  position: relative;
+  padding-left: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--border-color);
+  border-radius: 1px;
+}
+
+.education-card {
+  position: relative;
+}
+
+.education-timeline-dot {
+  position: absolute;
+  left: -32px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 2px solid var(--text-tertiary);
+  transition: border-color var(--transition-base), background 0.6s ease;
+  z-index: 1;
+}
+
+.education-card:first-child .education-timeline-dot {
+  border-color: var(--text-primary);
+  background: var(--text-primary);
+}
+
+.education-content {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base),
+              background-color 0.6s ease;
+}
+
+.education-content:hover {
+  border-color: var(--text-tertiary);
+  box-shadow: var(--shadow-md);
+}
+
+.education-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  gap: 12px;
+}
+
+.education-top h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.education-status {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 100px;
+  background: var(--accent-dim);
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.education-status.pursuing {
+  background: rgba(34, 197, 94, 0.12);
+  color: #22c55e;
+}
+
+.education-field {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.education-institution {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  margin-bottom: 8px;
+}
+
+.education-period {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card {
+    padding: 28px;
+  }
+
+  .lc-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contest-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .education-timeline {
+    padding-left: 28px;
+  }
+
+  .education-timeline-dot {
+    left: -28px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .education-content {
+    padding: 20px 22px;
+  }
+}
