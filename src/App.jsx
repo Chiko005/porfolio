@@ -7,6 +7,7 @@ import Certificates from './components/Certificates';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import SplashCursor from './components/SplashCursor';
 
 export default function App() {
   const { theme, toggleTheme } = useTheme();
@@ -15,6 +16,7 @@ export default function App() {
     <>
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main>
+          <SplashCursor />
         <Hero />
         <Skills />
         <Projects />
