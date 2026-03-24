@@ -16,7 +16,7 @@ export default function App() {
     <>
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main>
-          <SplashCursor />
+        <SplashCursor />
         <Hero />
         <Skills />
         <Projects />

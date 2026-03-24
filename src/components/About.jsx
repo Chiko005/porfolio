@@ -35,21 +35,21 @@ const education = [
   {
     degree: 'Bachelor of Technology',
     field: 'Computer Science and Engineering',
-    institution: 'College, Punjab',
+    institution: 'Lovely Professional University, Punjab',
     period: "Aug' 2023 - Present",
     status: 'Pursuing',
   },
   {
     degree: 'Intermediate',
     field: 'Science Stream',
-    institution: 'School, Odisha',
+    institution: 'Christ Higher Secondary School, Cuttack, Odisha',
     period: "May' 2022 – May' 2023",
     status: 'Completed',
   },
   {
     degree: 'Matriculation',
     field: 'General Studies',
-    institution: 'School, Odisha',
+    institution: 'S.S.V.M, Cuttack, Odisha',
     period: "May' 2020 – May' 2021",
     status: 'Completed',
   },
@@ -72,16 +72,16 @@ export default function About() {
           <div className="about-card reveal delay-3">
             <div className="about-card-header">
               <div className="about-card-icon"><PuzzleIcon /></div>
-              <h3>LeetCode Progress</h3>
+              <h3>Problem Solving Progress</h3>
             </div>
 
             <div className="lc-stats-grid">
               <div className="lc-stat">
-                <div className="lc-stat-value">450+</div>
+                <div className="lc-stat-value">500+</div>
                 <div className="lc-stat-label">Solved</div>
               </div>
               <div className="lc-stat">
-                <div className="lc-stat-value">Top 8%</div>
+                <div className="lc-stat-value">Top 10%</div>
                 <div className="lc-stat-label">Global Rank</div>
               </div>
             </div>
@@ -92,21 +92,21 @@ export default function About() {
                 <div className="lc-difficulty-bar-wrapper">
                   <div className="lc-difficulty-bar easy" style={{ '--fill-width': '95%' }}></div>
                 </div>
-                <span className="lc-difficulty-count">142</span>
+                <span className="lc-difficulty-count">170</span>
               </div>
               <div className="lc-difficulty-item">
                 <span className="lc-difficulty-label">Medium</span>
                 <div className="lc-difficulty-bar-wrapper">
                   <div className="lc-difficulty-bar medium" style={{ '--fill-width': '72%' }}></div>
                 </div>
-                <span className="lc-difficulty-count">235</span>
+                <span className="lc-difficulty-count">255</span>
               </div>
               <div className="lc-difficulty-item">
                 <span className="lc-difficulty-label">Hard</span>
                 <div className="lc-difficulty-bar-wrapper">
                   <div className="lc-difficulty-bar hard" style={{ '--fill-width': '38%' }}></div>
                 </div>
-                <span className="lc-difficulty-count">73</span>
+                <span className="lc-difficulty-count">75</span>
               </div>
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function About() {
 
             <div className="contest-stats">
               <div className="contest-stat">
-                <div className="contest-stat-value">42</div>
+                <div className="contest-stat-value">12</div>
                 <div className="contest-stat-label">Contests</div>
               </div>
               <div className="contest-stat">
