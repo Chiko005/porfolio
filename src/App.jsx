@@ -11,6 +11,7 @@ import SplashCursor from './components/SplashCursor';
 
 export default function App() {
   const { theme, toggleTheme } = useTheme();
+  
 
   return (
     <>

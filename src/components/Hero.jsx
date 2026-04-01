@@ -15,7 +15,7 @@ export default function Hero() {
         <div className="hero-content">
           <div className="hero-text">
             <p className="hero-greeting hero-grow grow-delay-1">Hello, I'm</p>
-            <h1 className="hero-name hero-grow grow-delay-2"><span className="logo1-text">Ashish Dash</span></h1>
+            <h1 className="hero-name hero-grow grow-delay-2">Ashish Dash</h1>
             <p className="hero-role hero-grow grow-delay-3">Full Stack Developer</p>
             <p className="hero-mission hero-grow grow-delay-4">
               Crafting elegant solutions through clean code and thoughtful design.
